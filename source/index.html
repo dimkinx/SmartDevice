@@ -2,9 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <title>Smart Device</title>
+    <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,10 +14,10 @@
         <a class="page-header__logo"></a>
         <ul class="page-header__contacts">
           <li class="page-header__contacts-item">
-            <a class="page-header__email" href="mailto:info@sd.ru">info@sd.ru</a>
+            <a class="page-header__email" href="mailto:info@sd.ru" aria-label="Написать нам">info@sd.ru</a>
           </li>
           <li class="page-header__contacts-item">
-            <a class="page-header__phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
+            <a class="page-header__phone" href="tel:+74950005252" aria-label="Позвонить нам">+7 (495) 000 52 52</a>
           </li>
           <li class="page-header__contacts-item">
             <a class="order-call button button--transparent" href="#">Заказать звонок</a>
@@ -35,7 +36,7 @@
     </header>
     <main  id="content" class="page-main">
       <h1 class="visually-hidden">Smart Device - сайт умных технологий</h1>
-      <section class="benefits">
+      <section class="page-main__benefits benefits">
         <h2 class="visually-hidden">Преймущества</h2>
         <ul class="benefits__items">
           <li class="benefits__item benefits__item--time">
@@ -56,47 +57,45 @@
           </li>
         </ul>
       </section>
-      <section class="about-company">
+      <section class="page-main__about-company about-company">
         <h2 class="about-company__title">О компании</h2>
         <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
         <p class="about-company__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
         <a class="about-company__more button button--transparent">Подробнее</a>
       </section>
-      <section class="products-and-services">
+      <section class="page-main__products-and-services products-and-services">
         <h2 class="products-and-services__title">Service Device предлагает следующие товары и услуги</h2>
         <ul class="products-and-services__items">
           <li class="products-and-services__item products-and-services__item--manufacture">
-            <a class="products-and-services__link">Производство печатных плат</a>
+            <a class="products-and-services__link" href="#">Производство печатных плат</a>
           </li>
           <li class="products-and-services__item products-and-services__item--mounting">
-            <a class="products-and-services__link">Монтаж печатных плат</a>
+            <a class="products-and-services__link" href="#">Монтаж печатных плат</a>
           </li>
           <li class="products-and-services__item products-and-services__item--accessories">
-            <a class="products-and-services__link">Комплектующие для светотехники</a>
+            <a class="products-and-services__link" href="#">Комплектующие для светотехники</a>
           </li>
         </ul>
       </section>
-    </main>
-    <footer class="page-footer">
-      <section class="questions">
+      <section class="page-main__questions questions">
         <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
         <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
         <form class="questions__form" action="#" method="post">
           <ul class="questions__items">
             <li class="questions__item">
-              <label class="visually-hidden" for="user-name">Введите в поле Ваше имя:</label>
-              <input class="questions__input" id="user-name" type="text" name="name" placeholder="Имя">
+              <input class="questions__input" id="user-name" type="text" name="name" placeholder="Имя" required>
+              <label class="visually-hidden" for="user-name">Укажите как к Вам обращаться</label>
             </li>
             <li class="questions__item">
-              <label class="visually-hidden" for="phone-number">Введите в поле Ваш номер телефона:</label>
-              <input class="questions__input" id="phone-number" type="text" name="phone-number" placeholder="Телефон">
+              <input class="questions__input" id="phone-number" type="text" name="phone-number" placeholder="Телефон" required>
+              <label class="visually-hidden" for="phone-number">Укажите Ваш контактный номер телефона</label>
             </li>
             <li class="questions__item">
-              <label class="visually-hidden" for="question-text">Введите в поле Ваш вопрос:</label>
-              <textarea class="questions__text" id="question-text" name="question-text" rows="4" placeholder="Ваш вопрос"></textarea>
+              <textarea class="questions__text" id="question-text" name="question-text" rows="4" placeholder="Ваш вопрос" required></textarea>
+              <label class="visually-hidden" for="question-text">Напишите какая информация Вас интересует</label>
             </li>
             <li class="questions__item">
-              <input class="questions__input" id="gdpr" type="checkbox" name="gdpr-consent" value="allow" checked>
+              <input class="questions__input" id="gdpr" type="checkbox" name="gdpr-consent" value="allow" required>
               <label class="questions__label" for="gdpr">Я согласен на обработку  персональных данных</label>
             </li>
             <li class="questions__item">
@@ -105,6 +104,119 @@
           </ul>
         </form>
       </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo"></a>
+      <p class="first-copyright">1999-2018 SD Service Devices</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="20" height="20" aria-label="Наша группа в Facebook">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="20" height="20" aria-label="Наша группа в Одноклассниках">
+              <use xlink:href="img/sprite.svg#icon-ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__icon" width="20" height="20" aria-label="Наша группа во Вконтакте">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__section site-menu">
+        <h2 class="page-footer__section-title">Разделы сайта</h2>
+        <ul class="site-menu__items">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">О компании</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Продукты</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Производство печатных плат</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Монтаж печатных плат</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Комплектующие</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Доставка</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="page-footer__section-toggle-button">
+          <span class="visually-hidden">Отобразить/скрыть информацию</span>
+        </button>
+      </div>
+      <div class="page-footer__section contacts">
+        <h2 class="page-footer__section-title">Наш офис</h2>
+        <address class="contacts__content">г. Мытищи, Олимпийский проспект, д.10
+          <ul class="contacts__items">
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </li>
+          </ul>
+        </address>
+        <button class="page-footer__section-toggle-button">
+          <span class="visually-hidden">Отобразить/скрыть информацию</span>
+        </button>
+      </div>
+      <div class="page-footer__bottom">
+        <p class="second-copyright"><span class="all-rights-reserved">Все права защищены </span>1999-2018 SD Service Devices</p>
+        <a class="page-footer__confidentiality" href="#">Условия конфиденциальности</a>
+        <a class="page-footer__developers" href="#">Developed by wow studio</a>
+      </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Закажите звонок</h2>
+        <p class="modal__lead">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="modal__form" action="#" method="post">
+          <ul class="modal__items">
+            <li class="modal__item">
+              <input class="modal__input" id="modal-user-name" type="text" name="name" placeholder="Имя" required>
+              <label class="visually-hidden" for="modal-user-name">Укажите как к Вам обращаться</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__input" id="modal-phone-number" type="text" name="modal-phone-number" placeholder="Телефон" required>
+              <label class="visually-hidden" for="modal-phone-number">Укажите Ваш контактный номер телефона</label>
+            </li>
+            <li class="modal__item">
+              <textarea class="modal__text" id="modal-text" name="modal-text" rows="4" placeholder="Ваш вопрос" required></textarea>
+              <label class="visually-hidden" for="modal-text">Напишите какая информация Вас интересует</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__input" id="modal-gdpr" type="checkbox" name="modal-gdpr-consent" value="allow" required>
+              <label class="modal__label" for="modal-gdpr">Я согласен на обработку  персональных данных</label>
+            </li>
+            <li class="modal__item">
+              <button class="modal__button button button--transparent" type="submit">Отправить</button>
+            </li>
+          </ul>
+        </form>
+        <button class="modal__close-button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+      </div>
+      <div class="modal__overlay"></div>
+    </section>
   </body>
 </html>
