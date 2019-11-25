@@ -9,18 +9,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo"></a>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+            <img class="logo__img" src="img/logo-header.svg" alt="Логотип Smart Device">
+          </picture>
+        </a>
         <ul class="page-header__contacts">
           <li class="page-header__contacts-item">
-            <a class="page-header__email" href="mailto:info@sd.ru" aria-label="Написать нам">info@sd.ru</a>
+            <a class="page-header__contacts-link page-header__contacts-link--email" href="mailto:info@sd.ru" aria-label="Написать нам">info@sd.ru</a>
           </li>
           <li class="page-header__contacts-item">
-            <a class="page-header__phone" href="tel:+74950005252" aria-label="Позвонить нам">+7 (495) 000 52 52</a>
+            <a class="page-header__contacts-link page-header__contacts-link--phone" href="tel:+74950005252" aria-label="Позвонить нам">+7 (495) 000 52 52</a>
           </li>
           <li class="page-header__contacts-item">
-            <a class="order-call button button--transparent" href="#">Заказать звонок</a>
+            <a class="page-header__contacts-link button button--transparent" href="#">Заказать звонок</a>
           </li>
         </ul>
       </div>
@@ -87,7 +95,7 @@
               <label class="visually-hidden" for="user-name">Укажите как к Вам обращаться</label>
             </li>
             <li class="questions__item">
-              <input class="questions__input" id="phone-number" type="text" name="phone-number" placeholder="Телефон" required>
+              <input class="questions__input" id="phone-number" type="tel" name="phone-number" placeholder="Телефон" pattern="[0-9-+\s()]{11,}" required>
               <label class="visually-hidden" for="phone-number">Укажите Ваш контактный номер телефона</label>
             </li>
             <li class="questions__item">
@@ -99,34 +107,36 @@
               <label class="questions__label" for="gdpr">Я согласен на обработку  персональных данных</label>
             </li>
             <li class="questions__item">
-              <button class="questions__button button button--blue" type="submit">Задать вопрос</button>
+              <input class="questions__button button button--blue" type="submit" value="Задать вопрос">
             </li>
           </ul>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo"></a>
+      <a class="page-footer__logo logo">
+        <img class="logo__img" src="img/logo-footer.svg" width="201" height="52" alt="Логотип Smart Device">
+      </a>
       <p class="first-copyright">1999-2018 SD Service Devices</p>
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="20" aria-label="Наша группа в Facebook">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="20" aria-label="Наша группа в Одноклассниках">
-              <use xlink:href="img/sprite.svg#icon-ok"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="20" aria-label="Наша группа во Вконтакте">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
@@ -192,11 +202,11 @@
         <form class="modal__form" action="#" method="post">
           <ul class="modal__items">
             <li class="modal__item">
-              <input class="modal__input" id="modal-user-name" type="text" name="name" placeholder="Имя" required>
+              <input class="modal__input" id="modal-user-name" type="text" name="modal-user-name" placeholder="Имя" required>
               <label class="visually-hidden" for="modal-user-name">Укажите как к Вам обращаться</label>
             </li>
             <li class="modal__item">
-              <input class="modal__input" id="modal-phone-number" type="text" name="modal-phone-number" placeholder="Телефон" required>
+              <input class="modal__input" id="modal-phone-number" type="tel" name="modal-phone-number" placeholder="Телефон" pattern="[0-9-+\s()]{11,}" required>
               <label class="visually-hidden" for="modal-phone-number">Укажите Ваш контактный номер телефона</label>
             </li>
             <li class="modal__item">
@@ -208,7 +218,7 @@
               <label class="modal__label" for="modal-gdpr">Я согласен на обработку  персональных данных</label>
             </li>
             <li class="modal__item">
-              <button class="modal__button button button--transparent" type="submit">Отправить</button>
+              <input class="modal__button button button--transparent" type="submit" value="Отправить">
             </li>
           </ul>
         </form>
