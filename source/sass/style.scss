@@ -4,6 +4,14 @@
 @import "./other/fonts.scss";
 @import "./other/variables.scss";
 @import "./other/mixins.scss";
+@import "./other/auxiliary.scss";
 /* global styles
    -------------------------------------------------------------------------- */
 @import "./other/global.scss";
+/* page-header blocks styles
+   -------------------------------------------------------------------------- */
+@import "./blocks/page-header.scss";
+/* page-main blocks styles
+   -------------------------------------------------------------------------- */
+@import "./blocks/page-main.scss";
+@import "./blocks/promo.scss";

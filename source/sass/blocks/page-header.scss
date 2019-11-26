@@ -1,0 +1,23 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto -118px;
+  max-width: $max-width;
+  height: 118px;
+  color: $bright-color;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    margin-bottom: -80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    margin-bottom: -70px;
+    height: 70px;
+  }
+}

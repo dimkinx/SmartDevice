@@ -9,15 +9,14 @@ html {
 }
 
 body {
-  min-width: $mobile-width;
-
   @include no-indents();
+  min-width: $min-width;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-family: $main-font;
   color: $text-color;
-  background-color: $contrast-color;
+  background-color: $bright-color;
 }
 
 a {
