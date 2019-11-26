@@ -6,15 +6,19 @@
     <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptmono-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   </head>
   <body>
-  <div style="display: none;">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
+  <object type="image/svg+xml" data="build/img/sprite_auto.svg"></object>
   <header class="page-header">
       <div class="page-header__inner">
-        <a class="page-header__logo">
+        <a class="page-header__logo logo">
           <picture>
             <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
             <img class="logo__img" src="img/logo-header.svg" alt="Логотип Smart Device">
@@ -32,15 +36,22 @@
           </li>
         </ul>
       </div>
-      <figure class="page-header__figure">
-        <img src="img.png" width="100" height="100" alt="Печатные платы">
-        <figcaption class="page-header__figcaption">
-          <p class="page-header__figcaption-title">Печатные платы</p>
-          <p class="page-header__figcaption-lead">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <figure class="page-header__promo promo">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/pcb-mobile@1x.webp 1x, img/pcb-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-tablet@1x.webp 1x, img/pcb-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/pcb-desktop@1x.webp 1x, img/pcb-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/pcb-mobile@1x.png 1x, img/pcb-mobile@2x.png 2x">
+          <source media="(max-width: 1023px)" srcset="img/pcb-tablet@1x.png 1x, img/pcb-tablet@2x.png 2x">
+          <img class="promo__img" src="img/pcb-desktop@1x.png" srcset="img/pcb-desktop@2x.png 2x" alt="Печатные платы">
+        </picture>
+        <figcaption class="promo__description">
+          <p class="promo__title">Печатные платы</p>
+          <p class="promo__lead">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="promo__consultation-link button button--blue" href="#">Получить бесплатную консультацию</a>
+          <a class="promo__skip-to-content" href="#content">Скролл вниз</a>
         </figcaption>
       </figure>
-      <a class="page-header__consultation button button--blue" href="#">Получить бесплатную консультацию</a>
-      <a class="page-header__skip-to-content" href="#content">Скролл вниз</a>
     </header>
     <main  id="content" class="page-main">
       <h1 class="visually-hidden">Smart Device - сайт умных технологий</h1>
@@ -121,21 +132,21 @@
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon" width="20" height="20" aria-label="Наша группа в Facebook">
+            <svg class="social__icon" width="27" height="27" aria-label="Наша группа в Facebook">
               <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon" width="20" height="20" aria-label="Наша группа в Одноклассниках">
+            <svg class="social__icon" width="27" height="26" aria-label="Наша группа в Одноклассниках">
               <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon" width="20" height="20" aria-label="Наша группа во Вконтакте">
+            <svg class="social__icon" width="27" height="26" aria-label="Наша группа во Вконтакте">
               <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
             </svg>
           </a>

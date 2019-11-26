@@ -1,3 +1,9 @@
-h1 {
-  color: red;
-}
+@import "../../node_modules/normalize.scss/normalize.scss";
+/* custom styles
+   -------------------------------------------------------------------------- */
+@import "./other/fonts.scss";
+@import "./other/variables.scss";
+@import "./other/mixins.scss";
+/* global styles
+   -------------------------------------------------------------------------- */
+@import "./other/global.scss";

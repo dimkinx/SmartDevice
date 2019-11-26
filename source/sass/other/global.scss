@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: $mobile-width;
+
+  @include no-indents();
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+  color: $text-color;
+  background-color: $contrast-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
