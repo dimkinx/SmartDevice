@@ -16,6 +16,10 @@
   line-height: 51px;
 }
 
+.about-company__colon {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .about-company {
     background-image: url("../img/bg-2005-tablet@1x.png");
@@ -29,6 +33,14 @@
   .about-company__title {
     font-size: 32px;
     line-height: 45px;
+  }
+
+  .about-company__colon {
+    display: inline;
+  }
+
+  .about-company__text-end {
+    display: none;
   }
 }
 

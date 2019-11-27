@@ -19,6 +19,10 @@
     background-position: top 46px center;
     background-size: cover;
   }
+
+  &--products-and-services {
+    background-color: $dark-color;
+  }
 }
 
 .page-main__promo {
@@ -37,6 +41,12 @@
   max-width: $max-width;
 }
 
+.page-main__products-and-services {
+  margin: 0 auto;
+  padding: 100px 200px 128px;
+  max-width: $max-width;
+}
+
 @media (max-width: $tablet-width) {
   .page-main__wrapper--promo {
     padding-left: 91px;
@@ -48,6 +58,10 @@
 
   .page-main__about-company {
     padding: 0 25px 80px 210px;
+  }
+
+  .page-main__products-and-services {
+    padding: 55px 25px 35px;
   }
 }
 
@@ -64,5 +78,9 @@
 
   .page-main__about-company {
     padding: 35px 15px 65px;
+  }
+
+  .page-main__products-and-services {
+    padding: 55px 15px 35px;
   }
 }
