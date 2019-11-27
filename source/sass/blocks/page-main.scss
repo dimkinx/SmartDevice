@@ -13,9 +13,23 @@
   }
 }
 
+.page-main__promo {
+  padding: 260px 0 0;
+}
+
+.page-main__benefits {
+  margin: 0 auto;
+  padding: 113px 200px 0;
+  max-width: $max-width;
+}
+
 @media (max-width: $tablet-width) {
   .page-main__wrapper--promo {
     padding-left: 91px;
+  }
+
+  .page-main__benefits {
+    padding: 55px 25px;
   }
 }
 
@@ -24,5 +38,9 @@
     flex-direction: column-reverse;
     align-items: center;
     padding-left: 0;
+  }
+
+  .page-main__benefits {
+    padding: 40px 15px;
   }
 }
