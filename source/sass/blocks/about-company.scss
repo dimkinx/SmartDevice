@@ -1,0 +1,44 @@
+.about-company {
+  background-image: url("../img/bg-2005-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: top left 170px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-2005-desktop@2x.png");
+  }
+}
+
+.about-company__title {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    background-image: url("../img/bg-2005-tablet@1x.png");
+    background-position: 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-2005-tablet@2x.png");
+    }
+  }
+
+  .about-company__title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company {
+    background-image: none;
+  }
+
+  .about-company__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}

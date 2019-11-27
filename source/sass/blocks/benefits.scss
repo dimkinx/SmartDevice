@@ -16,10 +16,10 @@
   }
 }
 
-.benefits-item__button {
+.benefits__button {
   position: relative;
   margin: 0;
-  padding: 40px 45px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -56,12 +56,12 @@
   }
 }
 
-.benefits-item__svg {
+.benefits__svg {
   fill: $accent-color;
 }
 
-.benefits-item__button:hover .benefits-item__svg,
-.benefits-item__button:focus .benefits-item__svg {
+.benefits__button:hover .benefits__svg,
+.benefits__button:focus .benefits__svg {
   fill: $bright-color;
 }
 
@@ -75,8 +75,8 @@
   color: $accent-color;
 }
 
-.benefits-item__button:hover .benefits__item-title,
-.benefits-item__button:focus .benefits__item-title {
+.benefits__button:hover .benefits__item-title,
+.benefits__button:focus .benefits__item-title {
   color: $bright-color;
 }
 
@@ -91,7 +91,7 @@
     min-height: 232px;
   }
 
-  .benefits-item__button {
+  .benefits__button {
     padding: 25px;
   }
 }

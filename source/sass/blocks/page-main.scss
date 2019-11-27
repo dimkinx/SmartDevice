@@ -3,13 +3,21 @@
 }
 
 .page-main__wrapper {
-  display: flex;
-  margin: 0 auto;
+  width: 100%;
 
   &--promo {
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     padding-left: 78px;
     max-width: $max-width;
+  }
+
+  &--benefits-and-about {
+    background-image: url("../img/bg-triangles.svg");
+    background-repeat: no-repeat;
+    background-position: top 46px center;
+    background-size: cover;
   }
 }
 
@@ -19,7 +27,13 @@
 
 .page-main__benefits {
   margin: 0 auto;
-  padding: 113px 200px 0;
+  padding: 113px 200px 70px;
+  max-width: $max-width;
+}
+
+.page-main__about-company {
+  margin: 0 auto;
+  padding: 0 200px 100px 380px;
   max-width: $max-width;
 }
 
@@ -31,6 +45,10 @@
   .page-main__benefits {
     padding: 55px 25px;
   }
+
+  .page-main__about-company {
+    padding: 0 25px 80px 210px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -41,6 +59,10 @@
   }
 
   .page-main__benefits {
-    padding: 40px 15px;
+    padding: 40px 15px 0;
+  }
+
+  .page-main__about-company {
+    padding: 35px 15px 65px;
   }
 }

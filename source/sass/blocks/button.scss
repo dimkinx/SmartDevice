@@ -41,4 +41,21 @@
       color: $accent-color-70;
     }
   }
+
+  &--white {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    background-color: $bright-color;
+
+    &:hover,
+    &:focus {
+      color: $bright-color;
+      text-decoration: none;
+      background-color: $accent-color;
+    }
+
+    &:active {
+      color: $bright-color-70;
+    }
+  }
 }
