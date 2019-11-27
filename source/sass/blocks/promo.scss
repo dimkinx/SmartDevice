@@ -2,7 +2,7 @@
   margin: 0;
   padding: 260px 0 0;
   width: 100%;
-  height: 878px;
+  min-height: 878px;
   color: $bright-color;
   background-image: url("../img/bg-start-screen-desktop@1x.png");
   background-color: $dark-color;
@@ -15,15 +15,95 @@
   }
 }
 
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 50%;
+}
+
+.promo__title {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $bright-color;
+}
+
+.promo__content {
+  padding-left: 94px;
+}
+
+.promo__lead {
+  font-size: 22px;
+  line-height: 34px;
+  color: $bright-color;
+}
+
+.promo__consultation-link {
+  padding: 15px 46px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.promo__consultation-link-text {
+  white-space: nowrap;
+
+  &--shot {
+    display: none;
+  }
+}
+
+.promo__skip-to-content {
+  @include no-indents();
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 16px;
+  color: $bright-color;
+  opacity: 0.5;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+
+  &:active {
+    color: $bright-color-70;
+  }
+}
+
+.promo__img {
+  flex-basis: 50%;
+  margin-left: auto;
+}
+
 @media (max-width: $tablet-width) {
   .promo {
     padding-top: 80px;
-    height: 686px;
+    min-height: 686px;
     background-image: url("../img/bg-start-screen-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-start-screen-mobile@2x.png");
     }
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo__content {
+    padding-left: 50px;
+  }
+
+  .promo__lead {
+    font-size: 18px;
+    line-height: 156.8%;
+  }
+
+  .promo__consultation-link {
+    padding: 15px 46px;
   }
 
   .promo__skip-to-content {
@@ -33,12 +113,48 @@
 
 @media (max-width: $mobile-width) {
   .promo {
-    padding-top: 70px;
-    height: 647px;
+    padding: 70px 15px;
+    min-height: 647px;
     background-image: url("../img/bg-start-screen-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-start-screen-mobile@2x.png");
+    }
+  }
+
+  .promo__inner {
+    width: 100%;
+    align-items: center;
+  }
+
+  .promo__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 0;
+  }
+
+  .promo__lead {
+    padding-left: 50px;
+    font-size: 16px;
+  }
+
+  .promo__consultation-link {
+    padding: 15px 34px;
+  }
+
+  .promo__consultation-link-text {
+    &--long {
+      display: none;
+    }
+
+    &--shot {
+      display: inline;
     }
   }
 }

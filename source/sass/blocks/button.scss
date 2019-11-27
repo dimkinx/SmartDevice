@@ -1,0 +1,44 @@
+.button {
+  display: inline-block;
+  padding: 15px 27px;
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $bright-color;
+  border: 1px solid $bright-color;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: $accent-color;
+  }
+
+  &:active {
+    color: $bright-color-70;
+  }
+
+  &--blue {
+    color: $bright-color;
+    border: 1px solid $accent-color;
+    background-color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      text-decoration: none;
+      background-color: $bright-color;
+    }
+
+    &:active {
+      color: $accent-color-70;
+    }
+  }
+}

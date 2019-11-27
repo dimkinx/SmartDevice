@@ -7,26 +7,22 @@
   margin: 0 auto;
 
   &--promo {
+    justify-content: space-between;
+    padding-left: 78px;
     max-width: $max-width;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .promo {
-    background-image: url("../img/bg-start-screen-tablet@1x.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-start-screen-mobile@2x.png");
-    }
+  .page-main__wrapper--promo {
+    padding-left: 91px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .promo {
-    background-image: url("../img/bg-start-screen-mobile@1x.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-start-screen-mobile@2x.png");
-    }
+  .page-main__wrapper--promo {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 0;
   }
 }

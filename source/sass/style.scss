@@ -8,6 +8,10 @@
 /* global styles
    -------------------------------------------------------------------------- */
 @import "./other/global.scss";
+/* elements styles
+   -------------------------------------------------------------------------- */
+@import "./blocks/logo.scss";
+@import "./blocks/button.scss";
 /* page-header blocks styles
    -------------------------------------------------------------------------- */
 @import "./blocks/page-header.scss";
