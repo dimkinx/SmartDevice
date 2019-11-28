@@ -46,29 +46,29 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Smart Device - сайт умных технологий</h1>
-      <section class="page-main__promo promo">
-        <div class="page-main__wrapper page-main__wrapper--promo">
-          <div class="promo__inner">
-            <h2 class="promo__title">Печатные платы</h2>
-            <div class="promo__content">
-              <p class="promo__lead">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="promo__consultation-link button button--blue" href="#">
-                <span class="promo__consultation-link-text promo__consultation-link-text--long">Получить бесплатную консультацию</span>
-                <span class="promo__consultation-link-text promo__consultation-link-text--shot">Бесплатная консультация</span>
-              </a>
+      <div class="page-main__wrapper page-main__wrapper--promo">
+        <section class="page-main__promo promo">
+            <div class="promo__inner">
+              <h2 class="promo__title">Печатные платы</h2>
+              <div class="promo__content">
+                <p class="promo__lead">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+                <a class="promo__consultation-link button button--blue" href="#">
+                  <span class="promo__consultation-link-text promo__consultation-link-text--long">Получить бесплатную консультацию</span>
+                  <span class="promo__consultation-link-text promo__consultation-link-text--shot">Бесплатная консультация</span>
+                </a>
+              </div>
+              <a class="promo__skip-to-content" href="#content">Скролл вниз</a>
             </div>
-            <a class="promo__skip-to-content" href="#content">Скролл вниз</a>
-          </div>
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/pcb-mobile@1x.webp 1x, img/pcb-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-tablet@1x.webp 1x, img/pcb-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/pcb-desktop@1x.webp 1x, img/pcb-desktop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/pcb-mobile@1x.png 1x, img/pcb-mobile@2x.png 2x">
-            <source media="(max-width: 1023px)" srcset="img/pcb-tablet@1x.png 1x, img/pcb-tablet@2x.png 2x">
-            <img class="promo__img" src="img/pcb-desktop@1x.png" srcset="img/pcb-desktop@2x.png 2x" alt="Образцы печатных плат - Smart Device">
-          </picture>
-        </div>
-      </section>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/pcb-mobile@1x.webp 1x, img/pcb-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-tablet@1x.webp 1x, img/pcb-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/pcb-desktop@1x.webp 1x, img/pcb-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/pcb-mobile@1x.png 1x, img/pcb-mobile@2x.png 2x">
+              <source media="(max-width: 1023px)" srcset="img/pcb-tablet@1x.png 1x, img/pcb-tablet@2x.png 2x">
+              <img class="promo__img" src="img/pcb-desktop@1x.png" srcset="img/pcb-desktop@2x.png 2x" alt="Образцы печатных плат - Smart Device">
+            </picture>
+        </section>
+      </div>
       <div class="page-main__wrapper page-main__wrapper--benefits-and-about">
         <section class="page-main__benefits benefits" id="content">
           <h2 class="visually-hidden">Преймущества</h2>
@@ -129,38 +129,40 @@
               <a class="products-and-services__link" href="#">Монтаж печатных плат</a>
             </li>
             <li class="products-and-services__item products-and-services__item--accessories">
-              <a class="products-and-services__link" href="#">Комплектующие для&nbsp;npm starсветотехники</a>
+              <a class="products-and-services__link" href="#">Комплектующие для&nbsp;светотехники</a>
             </li>
           </ul>
         </section>
       </div>
-      <section class="page-main__questions questions">
-        <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
-        <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
-        <form class="questions__form" action="#" method="post">
-          <ul class="questions__items">
-            <li class="questions__item">
-              <input class="questions__input" id="user-name" type="text" name="name" placeholder="Имя" required="">
-              <label class="visually-hidden" for="user-name">Укажите как к Вам обращаться</label>
-            </li>
-            <li class="questions__item">
-              <input class="questions__input" id="phone-number" type="tel" name="phone-number" placeholder="Телефон" pattern="[0-9-+\s()]{11,}" required="">
-              <label class="visually-hidden" for="phone-number">Укажите Ваш контактный номер телефона</label>
-            </li>
-            <li class="questions__item">
-              <textarea class="questions__text" id="question-text" name="question-text" rows="4" placeholder="Ваш вопрос" required=""></textarea>
-              <label class="visually-hidden" for="question-text">Напишите какая информация Вас интересует</label>
-            </li>
-            <li class="questions__item">
-              <input class="questions__input" id="gdpr" type="checkbox" name="gdpr-consent" value="allow" required="">
-              <label class="questions__label" for="gdpr">Я согласен на обработку  персональных данных</label>
-            </li>
-            <li class="questions__item">
-              <input class="questions__button button button--blue" type="submit" value="Задать вопрос">
-            </li>
-          </ul>
-        </form>
-      </section>
+      <div class="page-main__wrapper page-main__wrapper--questions">
+        <section class="page-main__questions questions">
+          <h2 class="questions__title">Остались&nbsp;вопросы? Задайте&nbsp;их&nbsp;нам!</h2>
+          <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
+          <form class="questions__form" action="#" method="post">
+            <ul class="questions__items">
+              <li class="questions__item">
+                <input class="questions__input" id="user-name" type="text" name="name" placeholder="Имя">
+                <label class="visually-hidden" for="user-name">Укажите как к Вам обращаться</label>
+              </li>
+              <li class="questions__item">
+                <input class="questions__input" id="phone-number" type="tel" name="phone-number" placeholder="Телефон" pattern="[0-9-+\s()]{11,}">
+                <label class="visually-hidden" for="phone-number">Укажите Ваш контактный номер телефона</label>
+              </li>
+              <li class="questions__item questions__item--textarea">
+                <textarea class="questions__text" id="question-text" name="question-text" rows="4" placeholder="Ваш вопрос"></textarea>
+                <label class="visually-hidden" for="question-text">Напишите какая информация Вас интересует</label>
+              </li>
+              <li class="questions__item questions__item--gdpr">
+                <input class="visually-hidden" id="gdpr" type="checkbox" name="gdpr-consent" value="allow">
+                <label class="questions__label" for="gdpr">Я согласен на обработку  персональных данных</label>
+              </li>
+              <li class="questions__item">
+                <input class="questions__button button button--blue button--blue--bordered" type="submit" value="Задать вопрос">
+              </li>
+            </ul>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">
