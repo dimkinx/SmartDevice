@@ -2,6 +2,7 @@ $main-font: "PT Mono", "Courier New", monospace;
 $extra-font: "Roboto Condensed", "Arial", sans-serif;
 
 $max-width: 1570px;
+$mid-width: 1230px;
 $min-width: 320px;
 $tablet-width: 1023px;
 $mobile-width: 767px;
@@ -11,9 +12,12 @@ $retina-dppx: 1.5dppx;
 
 $text-color: rgb(102, 102, 102);
 $bright-color: rgb(255, 255, 255);
+$bright-color-10: rgba(255, 255, 255, 0.1);
 $bright-color-20: rgba(255, 255, 255, 0.2);
 $bright-color-70: rgba(255, 255, 255, 0.7);
+$bright-color-80: rgba(255, 255, 255, 0.8);
 $dark-color: rgb(27, 45, 55);
+$dark-color-70: rgba(27, 45, 55, 0.7);
 $accent-color: rgb(0, 178, 255);
 $accent-color-70: rgba(0, 178, 255, 0.7);
 $contour-color: rgb(235, 235, 235);

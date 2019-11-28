@@ -17,7 +17,6 @@
   &:hover,
   &:focus {
     outline: none;
-    text-decoration: none;
     background-color: $accent-color;
   }
 
@@ -27,13 +26,16 @@
 
   &--blue {
     color: $bright-color;
-    border: 1px solid $accent-color;
+    border-color: $accent-color;
     background-color: $accent-color;
+
+    &--bordered {
+      border-color: $bright-color;
+    }
 
     &:hover,
     &:focus {
       color: $accent-color;
-      text-decoration: none;
       background-color: $bright-color;
     }
 
@@ -44,13 +46,12 @@
 
   &--white {
     color: $accent-color;
-    border: 1px solid $accent-color;
+    border-color: $accent-color;
     background-color: $bright-color;
 
     &:hover,
     &:focus {
       color: $bright-color;
-      text-decoration: none;
       background-color: $accent-color;
     }
 

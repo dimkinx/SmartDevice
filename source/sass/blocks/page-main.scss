@@ -6,15 +6,22 @@
   width: 100%;
 
   &--promo {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 78px;
-    max-width: $max-width;
+    min-height: 878px;
+    color: $bright-color;
+    background-image: url("../img/bg-start-screen-desktop@1x.png");
+    background-color: $dark-color;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-start-screen-desktop@2x.png");
+    }
   }
 
   &--benefits-and-about {
-    background-image: url("../img/bg-triangles.svg");
+    background-image: url("data:image/svg+xml,%3Csvg width='1892' height='1273' viewBox='0 0 1892 1273' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M297.208 559.738L297.208 1109.09L-178.543 834.413L297.208 559.738Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='296.896' cy='1108.88' r='5' transform='rotate(-30 296.896 1108.88)' fill='%23F2F2F2'/%3E%3Ccircle cx='297.053' cy='559.154' r='5' transform='rotate(-30 297.053 559.154)' fill='%23F2F2F2'/%3E%3Cpath d='M425.594 1.3811L425.594 257.777L203.549 129.579L425.594 1.3811Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1668.56 673.777L1668.56 417.381L1890.61 545.579L1668.56 673.777Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1312.62 536.625L836.874 811.299L836.874 261.95L1312.62 536.625Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='836.739' cy='261.198' r='5' transform='rotate(30 836.739 261.198)' fill='%23F2F2F2'/%3E%3Ccircle cx='836.896' cy='810.926' r='5' transform='rotate(30 836.896 810.926)' fill='%23F2F2F2'/%3E%3Ccircle cx='1313.05' cy='536.198' r='5' transform='rotate(30 1313.05 536.198)' fill='%23F2F2F2'/%3E%3C/svg%3E%0A");
+    background-color: $bright-color;
     background-repeat: no-repeat;
     background-position: top 46px center;
     background-size: cover;
@@ -22,6 +29,32 @@
 
   &--products-and-services {
     background-color: $dark-color;
+  }
+
+  &--questions {
+    position: relative;
+    padding-left: calc(50% + 15px);
+    background-image: url("data:image/svg+xml,%3Csvg width='1724' height='519' viewBox='0 0 1724 519' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M605.842 6.58362L331.167 482.334L56.4923 6.58367L605.842 6.58362Z' stroke='white'/%3E%3Cpath opacity='0.2' d='M326.148 204.75L165.5 483L4.8523 204.75L326.148 204.75Z' stroke='white'/%3E%3Cpath opacity='0.2' d='M1800.26 356.5L1522.01 517.148L1522.01 195.852L1800.26 356.5Z' stroke='white'/%3E%3Cpath opacity='0.2' d='M1447.91 102.136L1622.25 1.48003L1622.25 202.793L1447.91 102.136Z' stroke='white'/%3E%3Ccircle cx='56' cy='6' r='5' fill='white'/%3E%3Ccircle cx='5' cy='205' r='5' fill='white'/%3E%3Ccircle cx='166' cy='483' r='5' fill='white'/%3E%3Ccircle cx='331' cy='482' r='5' fill='white'/%3E%3Ccircle cx='606' cy='6' r='5' fill='white'/%3E%3C/svg%3E%0A");
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: top 100px right;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-image: url("../img/bg-paper-airplane-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: top 160px right 100px;
+      background-size: 511px 218px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-paper-airplane-desktop@2x.png");
+      }
+    }
   }
 }
 
@@ -31,25 +64,53 @@
 
 .page-main__benefits {
   margin: 0 auto;
-  padding: 113px 200px 70px;
-  max-width: $max-width;
+  padding: 113px 30px 70px;
+  max-width: $mid-width;
 }
 
 .page-main__about-company {
   margin: 0 auto;
-  padding: 0 200px 100px 380px;
-  max-width: $max-width;
+  padding: 0 30px 100px 180px;
+  max-width: $mid-width;
 }
 
 .page-main__products-and-services {
   margin: 0 auto;
-  padding: 100px 200px 128px;
-  max-width: $max-width;
+  padding: 100px 30px 128px;
+  max-width: $mid-width;
+}
+
+.page-main__questions {
+  margin-right: auto;
+  padding: 100px 30px 100px 0;
+  max-width: 600px;
 }
 
 @media (max-width: $tablet-width) {
-  .page-main__wrapper--promo {
-    padding-left: 91px;
+  .page-main__wrapper {
+    &--promo {
+      padding-top: 80px;
+      min-height: 686px;
+      background-image: url("../img/bg-start-screen-tablet@1x.png");
+      background-size: cover;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-start-screen-mobile@2x.png");
+    }
+
+    &--questions {
+      padding-left: 0;
+      background-image: none;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .page-main__promo {
+    padding: 0;
   }
 
   .page-main__benefits {
@@ -63,13 +124,23 @@
   .page-main__products-and-services {
     padding: 55px 25px 35px;
   }
+
+  .page-main__questions {
+    margin-right: 0;
+    padding: 80px 30px;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .page-main__wrapper--promo {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-left: 0;
+    padding: 70px 15px;
+    min-height: 647px;
+    background-image: url("../img/bg-start-screen-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-start-screen-mobile@2x.png");
+    }
   }
 
   .page-main__benefits {
