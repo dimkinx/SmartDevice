@@ -144,6 +144,16 @@
 }
 
 @media (max-width: $mobile-width) {
+  .page-footer {
+    &--no-js .page-footer__section-content {
+      display: block;
+    }
+
+    &--no-js .page-footer__toggle-button {
+      display: none;
+    }
+  }
+
   .page-footer__wrapper {
     flex-wrap: wrap;
     margin: 0;
@@ -220,7 +230,7 @@
     padding: 30px 15px;
     width: 100%;
 
-    &--closed .site-menu__items {
+    &--closed .page-footer__section-content {
       display: none;
     }
 

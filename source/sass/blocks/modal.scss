@@ -26,7 +26,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px 40px;
-  width: 490px;
+  max-width: 490px;
+  min-width: $min-width;
   min-height: 605px;
   box-sizing: border-box;
   background-color: $accent-color;
