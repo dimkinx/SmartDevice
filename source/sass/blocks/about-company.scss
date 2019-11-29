@@ -1,7 +1,7 @@
 .about-company {
   background-image: url("../img/bg-2005-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top 5px left;
   background-size: 220px 317px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -10,6 +10,7 @@
 }
 
 .about-company__title {
+  margin: 27px 0 23px;
   font-family: $extra-font;
   font-style: normal;
   font-weight: 400;
@@ -17,14 +18,24 @@
   line-height: 51px;
 }
 
+.about-company__text {
+  margin: 0 0 20px;
+}
+
 .about-company__colon {
   display: none;
+}
+
+.about-company__more {
+  margin-top: 18px;
+  min-width: 180px;
 }
 
 @media (max-width: $tablet-width) {
   .about-company {
     background-image: url("../img/bg-2005-tablet@1x.png");
-    background-position: 0 0;
+    background-position: -3px 0;
+    background-size: 251px 362px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-2005-tablet@2x.png");
@@ -43,6 +54,11 @@
   .about-company__text-end {
     display: none;
   }
+
+  .about-company__more {
+    margin-top: 25px;
+    min-width: 180px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -51,7 +67,13 @@
   }
 
   .about-company__title {
+    margin: 10px 0 20px;
     font-size: 28px;
     line-height: 39px;
+  }
+
+  .about-company__more {
+    margin-top: 30px;
+    min-width: 180px;
   }
 }

@@ -3,6 +3,7 @@
 }
 
 .products-and-services__title {
+  margin: 0 0 50px;
   font-family: $extra-font;
   font-style: normal;
   font-weight: 400;
@@ -21,7 +22,7 @@
 }
 
 .products-and-services__item {
-  width: 31%;
+  width: 31.6%;
   height: 620px;
 
   &--manufacture .products-and-services__link::before {
@@ -52,7 +53,7 @@
 .products-and-services__link {
   position: relative;
   display: block;
-  padding: 45px 145px 45px 45px;
+  padding: 50px 145px 45px 45px;
   width: 100%;
   height: 100%;
   font-family: $extra-font;
@@ -119,9 +120,13 @@
 }
 
 @media (max-width: $tablet-width) {
+  .products-and-services__link {
+    padding: 40px 70% 45px 45px;
+  }
+
   .products-and-services__title {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 45px;
   }
 
   .products-and-services__items {
@@ -160,6 +165,16 @@
 }
 
 @media (max-width: $mobile-width) {
+  .products-and-services__title {
+    margin: 0 0 45px 10px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .products-and-services__link {
+    padding: 20px 30% 35px 35px;
+  }
+
   .products-and-services__item {
     margin-bottom: 30px;
 

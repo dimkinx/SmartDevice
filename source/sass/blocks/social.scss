@@ -3,10 +3,15 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .social__item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 16px;
+}
+
+.social__link {
+  display: flex;
 }
 
 .social__icon {
@@ -30,7 +35,7 @@
 @media (max-width: $tablet-width) {
   .social {
     align-items: center;
-    margin-right: 30px;
+    margin-right: 25px;
   }
 }
 
