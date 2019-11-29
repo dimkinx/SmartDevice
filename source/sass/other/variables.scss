@@ -11,6 +11,9 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 $text-color: rgb(102, 102, 102);
+$auxiliary-text-color: rgb(27, 45, 55);
+$auxiliary-text-color-20: rgba(27, 45, 55, 0.2);
+$auxiliary-text-color-50: rgba(27, 45, 55, 0.5);
 $bright-color: rgb(255, 255, 255);
 $bright-color-10: rgba(255, 255, 255, 0.1);
 $bright-color-20: rgba(255, 255, 255, 0.2);
@@ -21,3 +24,6 @@ $dark-color-70: rgba(27, 45, 55, 0.7);
 $accent-color: rgb(0, 178, 255);
 $accent-color-70: rgba(0, 178, 255, 0.7);
 $contour-color: rgb(235, 235, 235);
+$grey-color: rgb(205, 205, 205);
+$second-grey-color: rgb(196, 196, 196);
+$overlay-color: rgba(0, 0, 0, 0.5);

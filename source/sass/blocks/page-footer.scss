@@ -1,0 +1,242 @@
+.page-footer {
+  width: 100%;
+  min-height: 318px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 65px 30px;
+  max-width: 1475px;
+  height: 270px;
+
+  &--bottom {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 52px;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $auxiliary-text-color-50;
+    height: auto;
+  }
+}
+
+.page-footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.page-footer__logo {
+  width: 215px;
+}
+
+.page-footer__first-copyright {
+  display: none;
+}
+
+.page-footer__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__section-title {
+  margin-top: 0;
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.page-footer__row {
+  width: 100%;
+  border-top: 1px solid $contour-color;
+}
+
+.page-footer__copyright-intro {
+  margin-right: 59px;
+}
+
+.page-footer__link {
+  color: $auxiliary-text-color-50;
+
+  &--confidentiality {
+    margin: 0 10%;
+    text-align: center;
+  }
+
+  &--developers {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+    color: $accent-color;
+  }
+
+  &:active {
+    color: $accent-color-70;
+  }
+}
+
+.page-footer__toggle-button {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 0;
+    height: 100%;
+
+    &--bottom {
+      padding: 0 30px;
+    }
+  }
+
+  .page-footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid $contour-color;
+  }
+
+  .page-footer__logo {
+    margin-left: 30px;
+  }
+
+  .page-footer__first-copyright {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $auxiliary-text-color-50;
+  }
+
+  .page-footer__copyright {
+    display: none;
+  }
+
+  .page-footer__link--confidentiality {
+    margin: 0;
+  }
+
+  .page-footer__section {
+    padding: 40px 30px;
+    width: 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 45px 0 0;
+    height: 100%;
+
+    &--bottom {
+      flex-direction: column;
+      padding: 15px 15px;
+    }
+  }
+
+  .page-footer__inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+
+  .page-footer__logo {
+    margin-left: 0;
+  }
+
+  .page-footer__toggle-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    margin: 30px 15px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 16px;
+      height: 1px;
+      background-color: $second-grey-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 16px;
+      height: 1px;
+      background-color: $second-grey-color;
+      transform: rotate(90deg);
+      display: none;
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+      outline: none;
+      background-color: $accent-color;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $accent-color-70;
+    }
+  }
+
+  .page-footer__section {
+    position: relative;
+    padding: 30px 15px;
+    width: 100%;
+
+    &--closed .site-menu__items {
+      display: none;
+    }
+
+    &--closed .page-footer__toggle-button {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .page-footer__section-title {
+    margin-bottom: 0;
+  }
+
+  .page-footer__link {
+    margin: 0;
+    padding: 15px 0;
+  }
+}

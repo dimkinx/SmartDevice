@@ -93,10 +93,10 @@
       min-height: 686px;
       background-image: url("../img/bg-start-screen-tablet@1x.png");
       background-size: cover;
-    }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-start-screen-mobile@2x.png");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-start-screen-mobile@2x.png");
+      }
     }
 
     &--questions {
@@ -153,5 +153,9 @@
 
   .page-main__products-and-services {
     padding: 55px 15px 35px;
+  }
+
+  .page-main__questions {
+    padding: 40px 15px;
   }
 }

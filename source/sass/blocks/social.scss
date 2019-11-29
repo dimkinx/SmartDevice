@@ -1,0 +1,41 @@
+.social {
+  @include no-indents();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social__icon {
+  fill: $grey-color;
+}
+
+.social__link:hover,
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: $accent-color;
+}
+
+.social__link:active .social__icon {
+  fill: $accent-color-70;
+}
+
+@media (max-width: $tablet-width) {
+  .social {
+    align-items: center;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social {
+    margin-right: 0;
+  }
+}
